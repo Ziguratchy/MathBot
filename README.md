@@ -12,7 +12,7 @@ Usage:
 ----------------------------------------------------------------------------------------------------------------------------------------
 Before you start, This Bot was made on VS Code (Visual Studio Code) so, the first thing you NEED to make is:
 
-1. Using the Terminal ---- Open the Terminal Using Ctrl + Shift + ' or On the 3 ..., going in "Terminal" and "New Terminal"
+1. Use the Terminal ---- Open the Terminal Using Ctrl + Shift + ' or On the 3 ..., going in "Terminal" and "New Terminal"
 2. Digit "pip install discord.py" to install all the discord library -- More info about discord library in: https://discordpy.readthedocs.io/en/stable/index.html:
 3. make sure to put your SECRET TOKEN on the "bot.run("PUT THE TOKEN HERE")" (Line 780) on the script - if you don't know how to get the SECRET TOKEN, contact me.
 4. after that, you can use the bot anyway you want!
