@@ -1,19 +1,20 @@
-import discord
-from discord.ext import commands
-
-
-intents = discord.Intents.all()
-bot = commands.Bot(".", intents=intents)
+import discord ------------------------┐
+                                        -------  # ALWAYS USE THIS FOR THE COMMANDS
+from discord.ext import commands ------┘  │
+                                       │  │
+                                       │  │
+intents = discord.Intents.all() -------┘  │
+bot = commands.Bot(".", intents=intents)--┘
 
 @bot.event
-async def on_ready():
-    syncs = await bot.tree.sync()
-    print(f"{len(syncs)} synced commands!")
-    print("Bot Initialized!")
-    print("Now Is Time to Make some Maths!")
-    print(f"Bot Connected as {bot.user}")
+async def on_ready():                           / -- # Here is how the bot Awakes
+    syncs = await bot.tree.sync()               / -- # Here is for Interactable Commands (delete if you don't want to use)
+    print(f"{len(syncs)} synced commands!")     / --------┐
+    print("Bot Initialized!")                   / ------------ # Those Prints is only to show something or for fun or for experiments and confirm that he's awakening
+    print("Now Is Time to Make some Maths!")    / --------┘
+    print(f"Bot Connected as {bot.user}")       / -- # Here is how he connects on Discord using print (i recommend don't delete this, bc is how you're gonna confirm that he's now Connected and Working).
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-@bot.tree.command(name = "maths", description = "Makes a simple math calculation")
+@bot.tree.command(name = "maths", description = "Makes a simple math calculation") -- # if you'll use Interactable Commands, Make sure to ALWAYS put Name and Description, if not, the command won't work
 async def maths(interaction: discord.Interaction, expression: str):
     try:
         result = eval(expression)
@@ -28,8 +29,8 @@ async def ping(interaction: discord.Interaction):
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 @bot.tree.command(name="help", description="Get a list of available commands")
 async def help_command(interaction: discord.Interaction):
-    embed = discord.Embed(title="Available Commands", color=discord.Color.blue())
-    embed.add_field(name="/maths <expression>", value="Makes a simple math calculation.\nExample: `/maths 2 + 2 * 3`", inline=False)
+    embed = discord.Embed(title="Available Commands", color=discord.Color.blue()) -- # Here is how a Embed is created
+    embed.add_field(name="/maths <expression>", value="Makes a simple math calculation.\nExample: `/maths 2 + 2 * 3`", inline=False) -- # Here is an Functional Embed
     embed.add_field(name="/ping", value="Check the bot's latency.", inline=False)
     embed.add_field(name="/expert <expression>", value="Makes a more complex math calculation with math module.\nExample: `/expert sqrt(16)`", inline=False)
     embed.add_field(name="/learn <topic>", value="Learn basic math concepts.\nTopics: algebra, geometry, calculus, trigonometry", inline=False)
