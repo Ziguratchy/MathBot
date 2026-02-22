@@ -17,7 +17,7 @@ Before you start, This Bot was made on VS Code (Visual Studio Code) so, the firs
 3. make sure to put your SECRET TOKEN on the "bot.run("PUT THE TOKEN HERE")" (Line 780) on the script - if you don't know how to get the SECRET TOKEN, contact me.
 4. after that, you can use the bot anyway you want!
 
-if you don't know how to make a "main.py" bot, i recommend you to read the Discord.py Docs:(https://discordpy.readthedocs.io/en/stable/quickstart.html)
+if you don't know how to make a "main.py" bot or made your own bot without using this experiment, i recommend you to read the Discord.py Docs:(https://discordpy.readthedocs.io/en/stable/quickstart.html)
 
 With love, ziguratchy!
 
