@@ -1,4 +1,4 @@
-# MathBot -- provide educational content and resources for learning mathematics in an engaging way.
+# MathBot -- Provide educational content and resources for learning mathematics in an engaging way.
 
 I created this bot to help other people understand mathematics, both in simple and advanced ways. I'm making this bot available both as a math bot and as an experiment bot, which includes embeds, links, etc. If you're going to use it for math, be aware that I will be updating this bot every week to implement new commands.
 
